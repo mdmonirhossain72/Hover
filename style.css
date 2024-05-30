@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-image: url(./image/wall-21534_640\ -\ Copy.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+.container{
+    margin: 150px;
+    width: 500px;
+    height: 500px;
+    background-image: url(./image/image.view.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-left: 150px;
+    border: 15px solid green;
+    box-shadow: 10px 5px 5px red;
+}
+.window1{
+    padding:20px;
+    width: 470px;
+    height: 470px;
+    background-image: url(./image/istockphoto-1167526943-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    box-shadow: 5px 5px 5px red;
+    transition: 2s;
+}
+.window2{
+    padding: 20px;
+    width: 470px;
+    height: 470px;
+    background-image: url(./image/istockphoto-1167526943-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    box-shadow: 5px 5px 5px red;
+    transition: 2s;
+}
+.container:hover .window1{
+    width: 470px;
+    height: 470px;
+    right: -470px;
+    position: absolute;
+}
+.container:hover .window2{
+    width: 470px;
+    height: 470px;
+    left: -470px;
+    position: absolute;
+}
